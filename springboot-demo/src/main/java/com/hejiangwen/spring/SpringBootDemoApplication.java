@@ -1,13 +1,13 @@
-package com.hejiangwen.springdemo;
+package com.hejiangwen.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringdemoApplication {
+public class SpringBootDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringdemoApplication.class, args);
+		SpringApplication.run(SpringBootDemoApplication.class, args);
 	}
 
 }
