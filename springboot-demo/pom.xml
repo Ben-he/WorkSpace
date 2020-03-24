@@ -11,12 +11,25 @@
 	<groupId>com.hejiangwen</groupId>
 	<artifactId>springboot-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springdemo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
+<!--	在不繼承spring-boot-starter-parent時使用可以達到同樣的效果-->
+<!--	<dependencyManagement>-->
+<!--		<dependencies>-->
+<!--			<dependency>-->
+<!--				&lt;!&ndash; Import dependency management from Spring Boot &ndash;&gt;-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-dependencies</artifactId>-->
+<!--				<version>2.2.0.M5</version>-->
+<!--				<type>pom</type>-->
+<!--				<scope>import</scope>-->
+<!--			</dependency>-->
+<!--		</dependencies>-->
+<!--	</dependencyManagement>-->
 
 	<dependencies>
 		<dependency>
@@ -34,6 +47,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<!--				在不繼承spring-boot-starter-parent時使用可以達到同樣的效果-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<goals>-->
+<!--							<goal>repackage</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
 			</plugin>
 		</plugins>
 	</build>
